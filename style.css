@@ -1,0 +1,24 @@
+div.item {
+    font-size: 4rem;
+    background-color: chocolate;
+    display: inline-block;
+    padding: 1rem;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0) scale(1) translate(0px, 0px);
+        background-color: chartreuse;
+    }
+    50% {
+        transform: rotate(180deg) scale(2) translate(200px, 300px);
+    }
+    100% {
+        transform: rotate(360deg) scale(2);
+        background-color: crimson;
+    }
+}
